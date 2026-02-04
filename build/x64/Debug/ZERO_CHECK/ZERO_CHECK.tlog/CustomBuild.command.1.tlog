@@ -1,0 +1,10 @@
+^D:\PROJECTS\C\CLOTHSIM\BUILD\CMAKEFILES\D643826D54074EF64BBD409C6AA94312\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/C/clothSim -BD:/Projects/C/clothSim/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Projects/C/clothSim/build/engine.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
